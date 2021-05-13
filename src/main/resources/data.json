@@ -1,0 +1,32 @@
+{
+  "topics":{
+    "flow":[
+      "prod_nw_cisco_flow",
+      "prod_msk_cisco_flow",
+      "prod_ug_cisco_flow",
+      "prod_pv_cisco_flow",
+      "prod_ural_cisco_flow",
+      "prod_sib_cisco_flow",
+      "prod_dv_cisco_flow"
+    ],
+    "http":[
+      "prod_nw_cisco_http",
+      "prod_msk_cisco_http",
+      "prod_ug_cisco_http",
+      "prod_pv_cisco_http",
+      "prod_ural_cisco_http",
+      "prod_sib_cisco_http",
+      "prod_dv_cisco_http"
+    ]
+  },
+  "kinit": {
+    "keytab": "/home/user/user.keytab",
+    "principal": "user@msk.ru"
+  },
+  "namenodes": ["srv-0001.ru", "srv-0002.ru"],
+  "env": {
+    "setParallelism": 1,
+    "enableCheckpointing": 100000,
+    "FsStateBackend": "/user/user/tmp/flink/checkpoints"
+  }
+}
